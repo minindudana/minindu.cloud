@@ -140,6 +140,7 @@ header.shadow {
   color: #fff;
   padding: 0.7rem 1.3rem;
   border-radius: 0.5rem;
+  margin-left: 5px;
 }
 .btn:hover {
   background: var(--hover);
