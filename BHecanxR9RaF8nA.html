@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="loginForm" class="login-form" onsubmit="validateForm(event)">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+            </div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+    <script>
+        // Disable right-click on the entire document
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+    </script>
+    <script>
+        // Disable keyboard shortcuts for inspecting element
+        document.addEventListener('keydown', function (e) {
+            // Check if the user pressed the F12 key or the Ctrl+Shift+I combination
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+                e.preventDefault(); // Prevent the default behavior
+            }
+        });
+    </script>
+    <script>
+        var timeoutDuration = 3000; // 5 seconds in milliseconds
+        var timeout;
+
+        // Start the timer when the page loads or when the user interacts with the login form
+        function startTimer() {
+            clearTimeout(timeout);
+            timeout = setTimeout(logout, timeoutDuration);
+        }
+
+        // Perform the logout action
+        function logout() {
+            // Redirect the user to the logout page or perform any other necessary actions
+            window.location.href = "index.html";
+        }
+
+        // Attach event listeners to the login form fields
+        document.getElementById("username").addEventListener("input", startTimer);
+        document.getElementById("password").addEventListener("input", startTimer);
+
+        function validateForm(event) {
+            event.preventDefault(); // Prevent form submission
+
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Check if the username and password are correct
+            if (username === 'admin' && password === '1234') {
+
+                // Redirect to a new webpage
+                window.location.href = "FpvszaaEWZnmulc=.html";
+
+                // Perform additional actions, such as redirecting to a new page
+            } else {
+                alert('Invalid username or password');
+                // Clear the form fields
+                document.getElementById('username').value = '';
+                document.getElementById('password').value = '';
+            }
+        }
+    </script>
+
+
+
+</body>
+
+
+</html>
