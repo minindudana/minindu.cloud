@@ -20,12 +20,12 @@
         <h1>Login</h1>
         <form id="loginForm" class="login-form" onsubmit="validateForm(event)">
             <div>
-                <label for="username">Username:</label>
-                <input type="text" id="username" required>
+                
+                <input type="text" placeholder="Username" id="username" required>
             </div>
             <div>
-                <label for="password">Password:</label>
-                <input type="password" id="password" required>
+                
+                <input type="password" placeholder="Password" id="password" required>
             </div>
             <div>
                 <input type="submit" value="Login">
@@ -77,7 +77,7 @@
             if (username === 'admin' && password === 'Minindu@#2005') {
 
                 // Redirect to a new webpage
-                window.location.href = "./dash";
+                window.location.href = "./my-password-list";
 
                 // Perform additional actions, such as redirecting to a new page
             } else {
