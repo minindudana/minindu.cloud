@@ -18,14 +18,14 @@
 <body>
     <div class="container">
         <h1>Login</h1>
+
         <form id="loginForm" class="login-form" onsubmit="validateForm(event)">
             <div>
-                
+
                 <input type="text" placeholder="Username" id="username" required>
             </div>
-            
             <div>
-                
+
                 <input type="password" placeholder="Password" id="password" required>
             </div>
             <div>
@@ -61,7 +61,7 @@
         // Perform the logout action
         function logout() {
             // Redirect the user to the logout page or perform any other necessary actions
-            window.location.href = "./index";
+            window.location.href = "index.html";
         }
 
         // Attach event listeners to the login form fields
@@ -76,9 +76,9 @@
 
             // Check if the username and password are correct
             if (username === 'admin' && password === 'Minindu@#2005') {
-
+                localStorage.setItem("admin", "Minindu@#2005");
                 // Redirect to a new webpage
-                window.location.href = "./my-password-list";
+                window.location.href = "my-password-list.html";
 
                 // Perform additional actions, such as redirecting to a new page
             } else {
