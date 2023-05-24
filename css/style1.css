@@ -82,7 +82,9 @@ input[type="submit"]:hover:before {
     
   }
 @media only screen and (max-width: 600px) {
-}
+  margin: 0 auto;
+  padding: 50px;
+  }
 
 }
 
