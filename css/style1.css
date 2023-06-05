@@ -1,35 +1,32 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f4f4f4;
+  background-color: #000000;
 }
-
 .container {
   max-width: 300px;
   margin: 100px auto;
-  margin-top: 75px;
-  background-color: #fff;
+  margin-top: 105px;
+  background-color: #ffffffa1;
+  padding-bottom: 100%;
   padding: 50px;
   padding-top: 10px;
   border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-size: cover;
 }
-
 h1 {
   color: #333131;
   text-align: center;
   margin-bottom: 20px;
 }
-
 form {
   margin-top: 20px;
 }
-
 label {
   display: block;
   margin-top: 10px;
   color: #333;
 }
-
 input[type="text"],
 input[type="password"] {
   width: 100%;
@@ -39,7 +36,6 @@ input[type="password"] {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
 input[type="submit"] {
   margin-top: 20px;
   padding: 10px;
@@ -53,12 +49,9 @@ input[type="submit"] {
   position: relative;
   overflow: hidden;
 }
-
 input[type="submit"]:hover {
   background-color: #4f61ff;
 }
-
-/* Cloud Icon */
 input[type="submit"]:before {
   content: "";
   position: absolute;
@@ -70,21 +63,11 @@ input[type="submit"]:before {
   background-image: url(https://example.com/cloud-icon.png);
   background-size: cover;
 }
-
-/* Animation */
 input[type="submit"]:hover:before {
   animation: rotate 1s infinite linear;
 }
-
 @keyframes rotate {
   100% {
       transform: translateY(-50%) rotate(360deg);
-    
   }
-@media only screen and (max-width: 600px) {
-  margin: 0 auto;
-  padding: 50px;
-  }
-
 }
-
