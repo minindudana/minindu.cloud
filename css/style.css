@@ -473,12 +473,10 @@ form textarea {
   from { width: 0; }
   to { width: 100%; }
 }
-
 @keyframes remove-cursor {
   from { border-right-color: #ffffff; }
   to { border-right-color: transparent; }
 }
-
 .typing-text {
   width: 0;
   white-space: nowrap;
