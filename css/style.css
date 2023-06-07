@@ -469,3 +469,32 @@ form textarea {
     margin-left: 25%;
   }
 }
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes remove-cursor {
+  from { border-right-color: #ffffff; }
+  to { border-right-color: transparent; }
+}
+
+.typing-text {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid #ffffff;
+  font-size: 24px;
+  animation: typing 4s steps(30) forwards, remove-cursor 0.1s ease-in-out 1.5s forwards;
+}
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animated-text {
+  animation: fade-in .5s ease-in-out;
+}
+.animated-text1 {
+  animation: fade-in 2.7s ease-in-out;
+}
